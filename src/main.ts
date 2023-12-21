@@ -4,5 +4,6 @@ import { AppModule } from './app.module';
 async function bootstrap() {
   const app = await NestFactory.create(AppModule);
   await app.listen(3000);
+  console.log('url to server: http://localhost:3000');
 }
 bootstrap();
